@@ -3,6 +3,7 @@ import { TodoForm } from '../components/TodoForm'
 import { TodoList } from '../components/TodoList'
 import { ITodo } from '../interfaces'
 
+
 // or window.confirm()
 declare var confirm: (question: string) => boolean
 
@@ -40,7 +41,7 @@ export const TodosPage: React.FC = () => {
   }
 
   const removeHandler = (id: number) => {
-    const shouldRemove = window.confirm("You really want to remove todo")
+    const shouldRemove = confirm('You really want to remove todo?')
     if (shouldRemove) {
       setTodos(prev => prev.filter(todo => todo.id !== id))
     }

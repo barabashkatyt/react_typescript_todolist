@@ -12,7 +12,7 @@ export const AboutPage: React.FC = () => {
         voluptatum.
       </p>
       <button className="btn" onClick={() => history.push('/')}>
-        Обратно к списку дел
+        To Todo List
       </button>
     </>
   )
